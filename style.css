@@ -12,14 +12,19 @@
     justify-content: space-evenly;
 }
 
-#canvas {
-    border: solid;
-    min-height: 512px;
-    max-width: 512px;
+#box {
     display: flex;
     flex-wrap: wrap;
-    align-self: start;
-    flex: 1;
+    /* height: 256px;
+    width: 256px; */
+}
+
+#canvas {
+    border: solid;
+    height: 512px;
+    width: 512px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #sideBar {
