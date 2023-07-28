@@ -10,8 +10,13 @@ function handleMouseUp() {
    isMouseDown = false;
 }
 
-function handleMouseMove() {
-   console.log("hi");
+function handleMouseMove(event) {
+   if (isMouseDown) {
+      let targetDiv = document.elementFromPoint(event.clientX, event.clientY);
+      if (targetDiv && targetDiv.classList.contains('box')) {
+         targetDiv.style.backgroundColor = 'black';
+      }
+   }
 }
 
 for (let i = 0; i < (pixelCount * pixelCount); i++) {
