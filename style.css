@@ -12,11 +12,19 @@
     justify-content: space-evenly;
 }
 
-#box {
+#pixelSliderContainer {
     display: flex;
-    flex-wrap: wrap;
-    /* height: 256px;
-    width: 256px; */
+    flex-direction: column;
+    gap: 12px;
+}
+
+#pixelDimension {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    font-size: 24px;
+    height: 50px;
 }
 
 #canvas {
