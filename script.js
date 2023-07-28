@@ -1,6 +1,7 @@
-let canvas = document.getElementById("canvas");
+const canvas = document.getElementById("canvas");
 let pixelDimension = document.getElementById("pixelDimension");
 let isMouseDown = false;
+const clearButton = document.getElementById("clear");
 let pixelCount = 16;
 pixelDimension.textContent = `${pixelCount} X ${pixelCount}`
 slider.addEventListener("mousemove", (event) => pixelDimension.textContent = `${slider.value} X ${slider.value}`)
