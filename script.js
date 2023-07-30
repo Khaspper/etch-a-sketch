@@ -1,6 +1,18 @@
 const canvas = document.getElementById("canvas");
 let pixelDimension = document.getElementById("pixelDimension");
 let isMouseDown = false;
+
+//! !Update THIS! !\\
+let backgroundColor = 'white';
+let chosenColor = 'black';
+let penColor = chosenColor;
+
+const eraserButton = document.getElementById("eraser");
+eraserButton.addEventListener("click", (event) => {
+   penColor = backgroundColor;
+   handleMouseMove;
+})
+
 const clearButton = document.getElementById("clear");
 clearButton.addEventListener("click", (event) => {
    deleteAllChildElements(canvas);
@@ -28,7 +40,7 @@ function handleMouseMove(event) {
    if (isMouseDown) {
       let targetDiv = document.elementFromPoint(event.clientX, event.clientY);
       if (targetDiv && targetDiv.classList.contains('box')) {
-         targetDiv.style.backgroundColor = 'black';
+         targetDiv.style.backgroundColor = penColor;
       }
    }
 }
