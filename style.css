@@ -58,3 +58,8 @@
     background: #000000;
     cursor: pointer;
 }
+
+#pickColor {
+    border: solid;
+    border-radius: 5px;
+}
