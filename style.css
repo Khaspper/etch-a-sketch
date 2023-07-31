@@ -60,6 +60,7 @@
 }
 
 #pickColor {
+    margin-left: 70px;
     border: solid;
     border-radius: 5px;
 }

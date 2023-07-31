@@ -13,6 +13,7 @@ pixelDimension.textContent = `${pixelCount} X ${pixelCount}`;
 
 const pickColor = document.getElementById("pickColor");
 pickColor.addEventListener("change", (event) => {
+   isRainbowMode = false;
    chosenColor = pickColor.value;
    penToChosenColor();
 })
