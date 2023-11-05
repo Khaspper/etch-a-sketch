@@ -40,7 +40,6 @@ Once you've opened the application in your web browser, use the following contro
 
 - Left-click on the canvas and move the mouse to draw.
 - Use the controls panel to change colors, erase, or reset the canvas.
-- Save your creation using the "Save" button.
 
 ## Contributing
 
